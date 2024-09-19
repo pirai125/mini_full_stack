@@ -1,0 +1,52 @@
+GET http://localhost:3700/upload
+
+###
+
+POST http://localhost:3700/create
+Content-Type: application/json
+
+{
+"p_id":"124",
+"product_name":"coffe",
+"product_price":"12",
+"description": "say hi",
+"available_status":"done",
+"product_image":"image 2"
+
+}
+###
+GET http://localhost:3700/read/2
+###
+PUT http://localhost:3700/update/4
+Content-Type: application/json
+
+{
+"p_id":"124",
+"product_name":"coffee",
+"product_price":"124",
+"description": "say handsome",
+"available_status":"gone",
+"product_image":"image 3"
+
+}
+
+###
+DELETE http://localhost:3700/delete/4
+Content-Type: application/json
+
+
+###
+GET   http://localhost:3700/cartItems
+
+
+###
+POST  http://localhost:3700/order
+Content-Type: application/json
+
+{
+    "p_id":"123",
+    "product_name":"coffe",
+    "product_price":"123",
+    "quantity":"1",
+    "address":"palani"
+}
